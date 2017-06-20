@@ -67,8 +67,8 @@
 
 
 	// LES FONCTIONS
-// Exercice 1
 
+// Exercice 1
 	// function foo() {
 	// 	echo "true";
 	// }
@@ -82,4 +82,15 @@
 	// }
 	// foo();
 
+
+// Exercice 3
+	function foo (&$string1, &$string2){
+		$string1 = "Coucou !";
+		$string2 = "Tu vas bien";
+		$string3 = $string1 +" "+ $string2;
+
+		print ($string3);
+	}
+
+foo();
 ?>
