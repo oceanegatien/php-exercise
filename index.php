@@ -32,11 +32,21 @@
 
 
 //Exercice 4
-	$ex41 = 1;
-	for ($i=0; $i <= 10 ; $i++) { 
-		echo $ex41;
-		$ex41= $ex41+0.5;
+	// $ex41 = 1;
+	// for ($i=0; $i <= 10 ; $i++) { 
+	// 	echo $ex41;
+	// 	$ex41= $ex41+0.5;
+	// }
+
+
+// Exercice 5
+	// for ($i=0; $i <= 15 ; $i++) { 
+	// 	echo "On y arrive presque";
+	// }
+
+
+// Exercice 6
+	for ($i=20; $i >= 0; $i--) { 
+		echo "C'est presque bon";
 	}
-
-
 ?>
