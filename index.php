@@ -1,5 +1,5 @@
 <?php 
-	// les boucles 
+	// LES BOUCLES 
 
 // Exercice 1
 	// $ex1 = 0;
@@ -60,7 +60,26 @@
 
 
 // Exercice 8
-	for ($i=200; $i >= 0;$i= $i-12) {
-		echo "Enfin!!!";
-	}
+	// for ($i=200; $i >= 0;$i= $i-12) {
+	// 	echo "Enfin!!!";
+	// }
+
+
+
+	// LES FONCTIONS
+// Exercice 1
+
+	// function foo() {
+	// 	echo "true";
+	// }
+
+	// foo();
+
+// Exercice 2
+	// function foo ($string){
+	// 	$string = "coucou";
+	// 	print($string);
+	// }
+	// foo();
+
 ?>
