@@ -151,12 +151,35 @@
 
 
 // Exercice 8
-	$nb1 = 56;
-	$nb2 = 22;
-	$nb3 = 66;
-	function foo ($nb1, $nb2, $nb3){
-		echo($nb1+$nb2+$nb3);
-	}
+	// $nb1 = 56;
+	// $nb2 = 22;
+	// $nb3 = 66;
+	// function foo ($nb1, $nb2, $nb3){
+	// 	echo($nb1+$nb2+$nb3);
+	// }
 
-	foo($nb1, $nb2, $nb3);
+	// foo($nb1, $nb2, $nb3);
+
+
+	// ARRAY
+
+// Exercice 1
+	$table = array('Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Aout', 'Septembre', 'Octobre', 'Novembre', 'Décembre');
+	echo ($table[2]);
+	echo ($table[5]);
+
+	array_splice($table, 7, 1, "Août");
+	echo ($table[7]);
+
+	$dept = array(
+		"02" => "Aisne",
+		"59" => "Nord",
+		"60" => "Oise",
+		"62" => "Pas-de-Calais",
+		"80" => "Somme",
+		"51" => "Marne"
+		);
+	echo ($dept["59"]);
+	echo ($dept["51"]);
+
 ?>
