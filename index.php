@@ -163,31 +163,53 @@
 
 	// ARRAY
 
-// Exercice 1
-	$table = array('Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Aout', 'Septembre', 'Octobre', 'Novembre', 'Décembre');
+// Exercices
+	// $table = array('Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Aout', 'Septembre', 'Octobre', 'Novembre', 'Décembre');
 	// echo ($table[2]);
 	// echo ($table[5]);
 
-	array_splice($table, 7, 1, "Août");
+	//array_splice($table, 7, 1, "Août");
 	// echo ($table[7]);
 
-	$dept = array(
-		"02" => "Aisne",
-		"59" => "Nord",
-		"60" => "Oise",
-		"62" => "Pas-de-Calais",
-		"80" => "Somme",
-		"51" => "Marne"
-		);
+	// $dept = array(
+	// 	"02" => "Aisne",
+	// 	"59" => "Nord",
+	// 	"60" => "Oise",
+	// 	"62" => "Pas-de-Calais",
+	// 	"80" => "Somme",
+	// 	"51" => "Marne"
+	// 	);
 	// echo ($dept["59"]);
 	// echo ($dept["51"]);
-	$count = count($table);
+//	$count = count($table);
 	
 	// for ($i=0; $i < $count; $i++) { 
 	// 	echo($table[$i]);
 	// 	echo " ";
 	// }
-		print_r($dept);
+		//print_r($dept);
+
+		// print("Le département ");
+		// print($dept["02"]);
+		// print(" à le numéro 02");
 
 
+	// Paramètres d'URL
+// Exercice 1
 ?>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulaire</title>
+</head>
+<body>
+	<form action="/user.php" method="get">
+		<label for="name">Prénom</label>
+		<input id="name" type="text"/>
+
+		<label for="lastname">Nom</label>
+		<input id="lastname" type="text">
+	</form>
+</body>
+</html>
