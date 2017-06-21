@@ -84,13 +84,32 @@
 
 
 // Exercice 3
-	function foo (&$string1, &$string2){
-		$string1 = "Coucou !";
-		$string2 = "Tu vas bien";
-		$string3 = $string1 +" "+ $string2;
+// 	function foo (){
+// 		$string1 = "Coucou !";
+// 		$string2 = $string1 . " Tu vas bien?";
 
-		print ($string3);
+// 		return $string2;
+// 	}
+
+// echo foo();
+
+
+// Exercice 4
+	function foo ($a, $b){
+		switch ($a) {
+			case $a > $b:
+				echo "Le premier nombre est plus grand";
+				break;
+			
+			case $a < $b:
+				echo "Le premier nombre est plus petit";
+				break;
+
+			case $a == $b:
+				echo "Les deux nombres sont identiques";
+				break;
+		}
 	}
 
-foo();
+foo(15, 15);
 ?>
