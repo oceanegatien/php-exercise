@@ -95,21 +95,37 @@
 
 
 // Exercice 4
-	function foo ($a, $b){
-		switch ($a) {
-			case $a > $b:
-				echo "Le premier nombre est plus grand";
-				break;
+	// function foo ($a, $b){
+	// 	switch ($a) {
+	// 		case $a > $b:
+	// 			echo "Le premier nombre est plus grand";
+	// 			break;
 			
-			case $a < $b:
-				echo "Le premier nombre est plus petit";
-				break;
+	// 		case $a < $b:
+	// 			echo "Le premier nombre est plus petit";
+	// 			break;
 
-			case $a == $b:
-				echo "Les deux nombres sont identiques";
-				break;
-		}
+	// 		case $a == $b:
+	// 			echo "Les deux nombres sont identiques";
+	// 			break;
+	// 	}
+	// }
+
+	// foo(15, 15);
+
+
+// Exercice 5
+	// function foo ($nb, $str){
+	// 	return $nb . $str;
+	// }
+
+	// echo foo(7, "Coucou");
+
+
+// Exercice 6
+	function foo ($name, $lastname, $age){
+		echo "Bonjour ".$lastname." ".$name.", tu as ".$age." ans";
 	}
 
-foo(15, 15);
+	foo("Oceane", "Gatien", "27");
 ?>
