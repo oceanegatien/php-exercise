@@ -35,7 +35,7 @@
 	// $ex41 = 1;
 	// for ($i=0; $i <= 10 ; $i++) { 
 	// 	echo $ex41;
-	// 	$ex41= $ex41+0.5;
+	// 	$ex41= $ex41/2;
 	// }
 
 
@@ -165,11 +165,11 @@
 
 // Exercice 1
 	$table = array('Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Aout', 'Septembre', 'Octobre', 'Novembre', 'Décembre');
-	echo ($table[2]);
-	echo ($table[5]);
+	// echo ($table[2]);
+	// echo ($table[5]);
 
 	array_splice($table, 7, 1, "Août");
-	echo ($table[7]);
+	// echo ($table[7]);
 
 	$dept = array(
 		"02" => "Aisne",
@@ -179,7 +179,15 @@
 		"80" => "Somme",
 		"51" => "Marne"
 		);
-	echo ($dept["59"]);
-	echo ($dept["51"]);
+	// echo ($dept["59"]);
+	// echo ($dept["51"]);
+	$count = count($table);
+	
+	// for ($i=0; $i < $count; $i++) { 
+	// 	echo($table[$i]);
+	// 	echo " ";
+	// }
+		print_r($dept);
+
 
 ?>
