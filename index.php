@@ -123,9 +123,40 @@
 
 
 // Exercice 6
-	function foo ($name, $lastname, $age){
-		echo "Bonjour ".$lastname." ".$name.", tu as ".$age." ans";
+	// function foo ($name, $lastname, $age){
+	// 	echo "Bonjour ".$lastname." ".$name.", tu as ".$age." ans";
+	// }
+
+	// foo("Oceane", "Gatien", "27");
+
+
+// Exercice 7
+// 	function foo ($genre, $age){
+// 		if ($genre === "homme") {
+// 			if ($age < 18 ) {
+// 				echo "Vous êtes un homme et vous êtes mineur";
+// 			}else{
+// 				echo "Vous êtes un homme et vous êtes majeur";
+// 			}
+// 		}elseif ($genre === "femme") {
+// 			if ($age < 18 ) {
+// 				echo "Vous êtes un femme et vous êtes mineur";
+// 			}else{
+// 				echo "Vous êtes un femme et vous êtes majeur";
+// 			}
+// 		}
+// }
+
+// 	foo("femme", 15);
+
+
+// Exercice 8
+	$nb1 = 56;
+	$nb2 = 22;
+	$nb3 = 66;
+	function foo ($nb1, $nb2, $nb3){
+		echo($nb1+$nb2+$nb3);
 	}
 
-	foo("Oceane", "Gatien", "27");
+	foo($nb1, $nb2, $nb3);
 ?>
