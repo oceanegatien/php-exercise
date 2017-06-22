@@ -209,16 +209,19 @@
 		<label for="lastname">Nom</label>
 		<input name="lastname" id="lastname" type="text">
 
-		<button type="submit">Envoyer</button>
+		<button type="submit">Envoyer(get)</button>
+	</form>
+	<form action="user.php" method="post">
+		<label for="name">Prénom</label>
+		<input name= "name" id="name" type="text"/>
+
+		<label for="lastname">Nom</label>
+		<input name="lastname" id="lastname" type="text">
+
+		<button type="submit">Envoyer(post)</button>
 	</form>
 	<div>
 		<?php
-
-				// Les formulaires
-			// Exercice 1
-
-			// $name = $_GET['name'];
-			// echo($name);
 
 				// Paramètres d'URL
 			// Exercice 1
