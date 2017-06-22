@@ -199,45 +199,51 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Formulaire</title>
+	<title>Les formulaires</title>
 </head>
 <body>
-	<form action="/user.php" method="get">
+	<form action="user.php" method="get">
 		<label for="name">Prénom</label>
-		<input id="name" type="text"/>
+		<input name= "name" id="name" type="text"/>
 
 		<label for="lastname">Nom</label>
-		<input id="lastname" type="text">
+		<input name="lastname" id="lastname" type="text">
 
-		<button>Envoyer</button>
+		<button type="submit">Envoyer</button>
 	</form>
 	<div>
 		<?php
 
+				// Les formulaires
+			// Exercice 1
+
+			// $name = $_GET['name'];
+			// echo($name);
+
 				// Paramètres d'URL
 			// Exercice 1
 
-			$nom = $_GET['nom'];
-			$prenom = $_GET['prenom'];
-			$age = $_GET['age'];
-			$dateDebut = $_GET['dateDebut'];
-			$dateFin = $_GET['dateFin'];
-			$langage = $_GET['langage'];
-			$serveur = $_GET['serveur'];
-			$semaine = $_GET['semaine'];
-			$batiment = $_GET['batiment'];
-			$salle = $_GET['salle'];
+			// $nom = $_GET['nom'];
+			// $prenom = $_GET['prenom'];
+			// $age = $_GET['age'];
+			// $dateDebut = $_GET['dateDebut'];
+			// $dateFin = $_GET['dateFin'];
+			// $langage = $_GET['langage'];
+			// $serveur = $_GET['serveur'];
+			// $semaine = $_GET['semaine'];
+			// $batiment = $_GET['batiment'];
+			// $salle = $_GET['salle'];
 
-			echo($nom);
-			echo ($prenom);
-			echo ($age);
-			echo ($dateDebut);
-			echo ($dateFin);
-			echo ($langage);
-			echo ($serveur);
-			echo ($semaine);
-			echo ($batiment);
-			echo ($salle);
+			// echo($nom);
+			// echo ($prenom);
+			// echo ($age);
+			// echo ($dateDebut);
+			// echo ($dateFin);
+			// echo ($langage);
+			// echo ($serveur);
+			// echo ($semaine);
+			// echo ($batiment);
+			// echo ($salle);
 
 		?>
 	</div>
