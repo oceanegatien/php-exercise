@@ -210,6 +210,35 @@
 
 		<label for="lastname">Nom</label>
 		<input id="lastname" type="text">
+
+		<button>Envoyer</button>
 	</form>
+	<div>
+		<?php
+			$nom = $_GET['nom'];
+			$prenom = $_GET['prenom'];
+			$age = $_GET['age'];
+			$dateDebut = $_GET['dateDebut'];
+			$dateFin = $_GET['dateFin'];
+			$langage = $_GET['langage'];
+			$serveur = $_GET['serveur'];
+
+			echo($nom);
+			echo ($prenom);
+			echo ($age);
+			echo ($dateDebut);
+			echo ($dateFin);
+			echo ($langage);
+			echo ($serveur);
+
+
+
+
+
+
+
+
+		?>
+	</div>
 </body>
 </html>
