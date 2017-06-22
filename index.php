@@ -194,8 +194,6 @@
 		// print(" à le numéro 02");
 
 
-	// Paramètres d'URL
-// Exercice 1
 ?>
 
 <!DOCTYPE html>
@@ -215,6 +213,10 @@
 	</form>
 	<div>
 		<?php
+
+				// Paramètres d'URL
+			// Exercice 1
+
 			$nom = $_GET['nom'];
 			$prenom = $_GET['prenom'];
 			$age = $_GET['age'];
@@ -222,6 +224,9 @@
 			$dateFin = $_GET['dateFin'];
 			$langage = $_GET['langage'];
 			$serveur = $_GET['serveur'];
+			$semaine = $_GET['semaine'];
+			$batiment = $_GET['batiment'];
+			$salle = $_GET['salle'];
 
 			echo($nom);
 			echo ($prenom);
@@ -230,13 +235,9 @@
 			echo ($dateFin);
 			echo ($langage);
 			echo ($serveur);
-
-
-
-
-
-
-
+			echo ($semaine);
+			echo ($batiment);
+			echo ($salle);
 
 		?>
 	</div>
