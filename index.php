@@ -202,6 +202,7 @@
 	<title>Les formulaires</title>
 </head>
 <body>
+<!--
 	<form action="user.php" method="get">
 		<label for="name">Prénom</label>
 		<input name= "name" id="name" type="text"/>
@@ -220,11 +221,34 @@
 
 		<button type="submit">Envoyer(post)</button>
 	</form>
+	-->
+	<form action="index.php" method="post">
+		<select name="civility" id="civility" value= "Civilité">Civilité
+			<option value="Madame">Madame</option>
+			<option value="Monsieur">Monsieur</option>
+		</select>
+
+		<label for="name">Prénom</label>
+		<input name= "name" id="name" type="text"/>
+
+		<label for="lastname">Nom</label>
+		<input name="lastname" id="lastname" type="text">
+
+		<button type="submit">Envoyer</button>
+
+	</form>
+
+
 	<div>
 		<?php
 
 				// Paramètres d'URL
-			// Exercice 1
+			// Exercice 5
+			$civility = $_POST['civility'];
+			$name = $_POST['name'];
+			$lastname = $_POST['lastname'];
+
+			echo($civility." ".$name." ".$lastname);
 
 			// $nom = $_GET['nom'];
 			// $prenom = $_GET['prenom'];
