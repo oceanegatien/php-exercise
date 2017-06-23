@@ -221,38 +221,51 @@
 
 		<button type="submit">Envoyer(post)</button>
 	</form>
-	
-	<form id="form" action="index.php" method="post">
-		<select name="civility" id="civility" value= "Civilité">Civilité
-			<option value="Madame">Madame</option>
-			<option value="Monsieur">Monsieur</option>
-		</select>
-
-		<label for="name">Prénom</label>
-		<input name= "name" id="name" type="text"/>
-
-		<label for="lastname">Nom</label>
-		<input name="lastname" id="lastname" type="text">
-
-		<button type="submit">Envoyer</button>
-
-	</form>
 
 
 	<div>-->
+
 		<?php
 				// les Formulaires
-			// Exercice 5
+			// Exercice 5 - 6 - 7 - 8
 				
-			// $civility = $_POST['civility'];
-			// $name = $_POST['name'];
-			// $lastname = $_POST['lastname'];
-			// if ($civility =="" && $name="" && $lastname="") {
-			// 	echo "ok";
-			// }else{
-			// }
+			$civility = $_POST['civility'];
+			$name = $_POST['name'];
+			$lastname = $_POST['lastname'];
+			$file = $_FILES['file']['name'];
 
-			// echo($civility." ".$name." ".$lastname);
+			$extensions = array('.png', 'jpeg', 'jpg');
+			$extension = strrchr($_FILES['file']['name'], '.');
+			
+
+			if ($civility == null || $name == null || $lastname == null || $file == null) {
+				echo 
+					'<form action="index.php" method="post" enctype="multipart/form-data">
+					<select name="civility" id="civility" value= "Civilité">Civilité
+						<option value="Madame">Madame</option>
+						<option value="Monsieur">Monsieur</option>
+					</select>
+
+					<label for="name">Prénom</label>
+					<input name= "name" id="name" type="text"/>
+
+					<label for="lastname">Nom</label>
+					<input name="lastname" id="lastname" type="text">
+					<label for="file">Fichier</label>
+					<input id="file" type="file" name="file"/>
+
+					<button type="submit">Envoyer</button>
+
+					</form>';
+			}else {
+				if (!in_array($extension, $extensions)) {
+					echo "Attention, seul les formats PNG, JPEG, JPG sont acceptés";
+				}else{
+					echo $civility." ".$lastname." ".$name." ".$file;
+			}
+				
+			}
+			
 
 				// Paramètres d'URL
 
@@ -320,11 +333,11 @@
 		// echo date('d-m-Y',$result);
 
 		// Exercice 8
-		$now = strtotime(date('d-m-Y'));
-		$plus1 = 3600 * 24;
-		$plus22 = 22 * $plus1;
-		$result = ($now - $plus22);
-		echo date('d-m-Y',$result);
+		// $now = strtotime(date('d-m-Y'));
+		// $plus1 = 3600 * 24;
+		// $plus22 = 22 * $plus1;
+		// $result = ($now - $plus22);
+		// echo date('d-m-Y',$result);
 
 
 		?>
