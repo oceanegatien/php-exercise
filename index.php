@@ -313,11 +313,19 @@
 		// echo ($fev2016);
 
 		// Exercice 7
+		// $now = strtotime(date('d-m-Y'));
+		// $plus1 = 3600 * 24;
+		// $plus20 = 20 * $plus1;
+		// $result = ($now+$plus20);
+		// echo date('d-m-Y',$result);
+
+		// Exercice 8
 		$now = strtotime(date('d-m-Y'));
 		$plus1 = 3600 * 24;
-		$plus20 = 20 * $plus1;
-		$result = ($now+$plus20);
+		$plus22 = 22 * $plus1;
+		$result = ($now - $plus22);
 		echo date('d-m-Y',$result);
+
 
 		?>
 	</div>
