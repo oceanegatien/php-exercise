@@ -295,17 +295,30 @@
 
 
 		// Exercice 5
-		$now = time();
+		// $now = time();
 		//echo $now;
-		$datedeux = strtotime('16-05-16');
-		$diff = $now-$datedeux;
+		// $datedeux = strtotime('16-05-16');
+		// $diff = $now-$datedeux;
 		
 		
-		$minutes = (int)($diff / 60);
-		$hours = (int)($minutes / 60);
-		$days = (int)($hours / 24);
+		// $minutes = (int)($diff / 60);
+		// $hours = (int)($minutes / 60);
+		// $days = (int)($hours / 24);
 		// echo $days;
-		echo "Le nombre de jour qui sépare la date d'aujourd'hui avec le 16 mai 2016 est de ".$days." !";
+		// echo "Le nombre de jour qui sépare la date d'aujourd'hui avec le 16 mai 2016 est de ".$days." !";
+
+
+		// Exercice 6
+		// $fev2016 = cal_days_in_month(0, 2, 2016);
+		// echo ($fev2016);
+
+		// Exercice 7
+		$now = strtotime(date('d-m-Y'));
+		$plus1 = 3600 * 24;
+		$plus20 = 20 * $plus1;
+		$result = ($now+$plus20);
+		echo date('d-m-Y',$result);
+
 		?>
 	</div>
 </body>
