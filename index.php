@@ -297,15 +297,17 @@
 
 				// Date
 			// Exercice 1-2-3-4
+		// setlocale (LC_TIME, 'fr_FR.utf8','fra'); 
 		// $date = date("d-m-Y");
 		// $datecourte = date("d-m-y");
 		// $datelettres = date("l d F Y");
-		// $heure = date('H:i:s');
+		// $heure = time();
+
 		// echo($date);
 		// echo ($datecourte);
 		// echo ($datelettres);
+		// echo (strftime("%A %d %B")); 
 		// echo ($heure);
-
 
 		// Exercice 5
 		// $now = time();
