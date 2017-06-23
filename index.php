@@ -221,8 +221,8 @@
 
 		<button type="submit">Envoyer(post)</button>
 	</form>
-	-->
-	<form action="index.php" method="post">
+	
+	<form id="form" action="index.php" method="post">
 		<select name="civility" id="civility" value= "Civilité">Civilité
 			<option value="Madame">Madame</option>
 			<option value="Monsieur">Monsieur</option>
@@ -239,17 +239,25 @@
 	</form>
 
 
-	<div>
+	<div>-->
 		<?php
+				// les Formulaires
+			// Exercice 5
+				
+			// $civility = $_POST['civility'];
+			// $name = $_POST['name'];
+			// $lastname = $_POST['lastname'];
+			// if ($civility =="" && $name="" && $lastname="") {
+			// 	echo "ok";
+			// }else{
+			// }
+
+			// echo($civility." ".$name." ".$lastname);
 
 				// Paramètres d'URL
+
+
 			// Exercice 5
-			$civility = $_POST['civility'];
-			$name = $_POST['name'];
-			$lastname = $_POST['lastname'];
-
-			echo($civility." ".$name." ".$lastname);
-
 			// $nom = $_GET['nom'];
 			// $prenom = $_GET['prenom'];
 			// $age = $_GET['age'];
@@ -272,6 +280,32 @@
 			// echo ($batiment);
 			// echo ($salle);
 
+
+
+				// Date
+			// Exercice 1-2-3-4
+		// $date = date("d-m-Y");
+		// $datecourte = date("d-m-y");
+		// $datelettres = date("l d F Y");
+		// $heure = date('H:i:s');
+		// echo($date);
+		// echo ($datecourte);
+		// echo ($datelettres);
+		// echo ($heure);
+
+
+		// Exercice 5
+		$now = time();
+		//echo $now;
+		$datedeux = strtotime('16-05-16');
+		$diff = $now-$datedeux;
+		
+		
+		$minutes = (int)($diff / 60);
+		$hours = (int)($minutes / 60);
+		$days = (int)($hours / 24);
+		// echo $days;
+		echo "Le nombre de jour qui sépare la date d'aujourd'hui avec le 16 mai 2016 est de ".$days." !";
 		?>
 	</div>
 </body>
