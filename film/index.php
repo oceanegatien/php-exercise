@@ -23,6 +23,7 @@
 				print "Le réalisateur du film « The LEGO Movie » est ".$value["im:artist"]["label"]."</br>";
 			}
 			
+			
 			// print_r($value);
 			// break;
 		}
