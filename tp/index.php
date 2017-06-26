@@ -36,49 +36,49 @@
 		<button type="submit">Valider</button>
 	</form>
 
-<?php
-	}else {
-		
-
-?>
+		<?php
+			}else{
+		?>
 	<table>
 		<thead>
 			<th><?php echo $year;?></th>
 		</thead>
 		<tbody>
 			<td><?php 
-			if ($month === "1") {
-				echo "Janvier";
-			}elseif ($month === "2") {
-				echo "Février";
-			}elseif ($month === "3") {
-				echo "Mars";
-			}elseif ($month === "4") {
-				echo "Avril";
-			}elseif ($month === "5") {
-				echo "Mai";
-			}elseif ($month === "6") {
-				echo "Juin";
-			}elseif ($month === "7") {
-				echo "Juillet";
-			}elseif ($month === "8") {
-				echo "Août";
-			}elseif ($month === "9") {
-				echo "Septembre";
-			}elseif ($month === "10") {
-				echo "Octobre";
-			}elseif ($month === "11") {
-				echo "Novembre";
-			}elseif ($month === "12") {
-				echo "Décembre";
-			}
-
-
-
-
+					if ($month === "1") {
+						echo "Janvier";
+					}elseif ($month === "2") {
+						echo "Février";
+					}elseif ($month === "3") {
+						echo "Mars";
+					}elseif ($month === "4") {
+						echo "Avril";
+					}elseif ($month === "5") {
+						echo "Mai";
+					}elseif ($month === "6") {
+						echo "Juin";
+					}elseif ($month === "7") {
+						echo "Juillet";
+					}elseif ($month === "8") {
+						echo "Août";
+					}elseif ($month === "9") {
+						echo "Septembre";
+					}elseif ($month === "10") {
+						echo "Octobre";
+					}elseif ($month === "11") {
+						echo "Novembre";
+					}elseif ($month === "12") {
+						echo "Décembre";
+					}
 			?></td>
-			<td><?php $nbj = cal_days_in_month(0, $month, $year);
-				echo $nbj;
+			<td><?php 
+				setlocale(LC_TIME, 'fr_FR', 'french', 'fra');
+				$nbj = cal_days_in_month(0, $month, $year);
+				echo "<ul>";
+				for ($i=1; $i < $nbj+1; $i++) { 
+					echo "<li>".$i."</li>";
+				}
+				echo "</ul>";
 			 ?></td>
 		</tbody>
 	</table>
